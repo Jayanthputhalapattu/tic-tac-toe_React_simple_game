@@ -15,6 +15,10 @@ body{
   align-items:  center;
   font-size: 30px;
 }
+.box:hover{
+ background-color: whitesmoke;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
 .icon {
   font-size: 35px;
   
