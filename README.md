@@ -1,1 +1,1 @@
-Play this game at http://jayanthp.netlify.com/ !
+Play this game at https://jaytictactoe.netlify.app/ !
