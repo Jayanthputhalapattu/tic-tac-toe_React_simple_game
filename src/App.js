@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "./logo.svg";
+
 import Icons from "./components/icon";
 
 import { ToastContainer, toast } from "react-toastify";
@@ -22,38 +22,38 @@ const App = () =>{
        itemArray.fill("empty",0,9)
   }
   const checkIsWinner = () =>{
-          if (itemArray[0] ==itemArray[1] && itemArray[1] ==itemArray[2] &&itemArray[0]!="empty"){
+          if (itemArray[0] ===itemArray[1] && itemArray[1] ===itemArray[2] &&itemArray[0]!=="empty"){
                     setWinMessage(`${itemArray[0]} wins`)
           }
-          else if (itemArray[3] ==itemArray[4] && itemArray[3] ==itemArray[5] &&itemArray[3]!="empty"){
+          else if (itemArray[3] ===itemArray[4] && itemArray[3] ===itemArray[5] &&itemArray[3]!=="empty"){
             setWinMessage(`${itemArray[3]} wins`)
   }
-  else if (itemArray[6] ==itemArray[7] && itemArray[6] ==itemArray[8] &&itemArray[6]!="empty"){
+  else if (itemArray[6] ===itemArray[7] && itemArray[6] ===itemArray[8] &&itemArray[6]!=="empty"){
     setWinMessage(`${itemArray[6]} wins`)
 }
-else if (itemArray[0] ==itemArray[3] && itemArray[0] ==itemArray[6] &&itemArray[0]!="empty"){
+else if (itemArray[0] ===itemArray[3] && itemArray[0] ===itemArray[6] &&itemArray[0]!=="empty"){
   setWinMessage(`${itemArray[0]} wins`)
 }
-else if (itemArray[1] ==itemArray[4] && itemArray[1] ==itemArray[7] &&itemArray[7]!="empty"){
+else if (itemArray[1] ===itemArray[4] && itemArray[1] ===itemArray[7] &&itemArray[7]!=="empty"){
   setWinMessage(`${itemArray[4]} wins`)
 }
-else if (itemArray[2] ==itemArray[5] && itemArray[2] ==itemArray[8] &&itemArray[5]!="empty"){
+else if (itemArray[2] ===itemArray[5] && itemArray[2] ===itemArray[8] &&itemArray[5]!=="empty"){
   setWinMessage(`${itemArray[5]} wins`)
 }
-else if (itemArray[3] ==itemArray[4] && itemArray[3] ==itemArray[5] &&itemArray[5]!="empty"){
+else if (itemArray[3] ===itemArray[4] && itemArray[3] ===itemArray[5] &&itemArray[5]!=="empty"){
   setWinMessage(`${itemArray[0]} wins`)
 }
-else if (itemArray[0] ==itemArray[4] && itemArray[0] ==itemArray[8] &&itemArray[8]!="empty"){
+else if (itemArray[0] ===itemArray[4] && itemArray[0] ===itemArray[8] &&itemArray[8]!=="empty"){
   setWinMessage(`${itemArray[0]} wins`)
 }
-else if (itemArray[3] ==itemArray[4] && itemArray[3] ==itemArray[5] &&itemArray[5]!="empty"){
+else if (itemArray[3] ===itemArray[4] && itemArray[3] ===itemArray[5] &&itemArray[5]!=="empty"){
   setWinMessage(`${itemArray[0]} wins`)
 }
-else if (itemArray[2] ==itemArray[4] && itemArray[2] ==itemArray[6] &&itemArray[4]!="empty"){
+else if (itemArray[2] ===itemArray[4] && itemArray[2] ===itemArray[6] &&itemArray[4]!=="empty"){
   setWinMessage(`${itemArray[2]} wins`)
 }
-else if (itemArray[0]!="empty" && itemArray[1]!="empty"&& itemArray[2]!="empty" &&itemArray[3]!="empty" 
-&&itemArray[4]!="empty" &&itemArray[5]!="empty" &&itemArray[6]!="empty" &&itemArray[7]!="empty" &&itemArray[8]!="empty"
+else if (itemArray[0]!=="empty" && itemArray[1]!=="empty"&& itemArray[2]!=="empty" &&itemArray[3]!=="empty" 
+&&itemArray[4]!=="empty" &&itemArray[5]!=="empty" &&itemArray[6]!=="empty" &&itemArray[7]!=="empty" &&itemArray[8]!=="empty"
 ){
         setWinMessage('Game draw')
   }
